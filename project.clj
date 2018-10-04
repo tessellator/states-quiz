@@ -24,6 +24,12 @@
 
     :plugins      [[lein-figwheel "0.5.16"]]}
    :prod { }
+   :uberjar {:source-paths ["env/prod/clj"]
+             :omit-source  true
+             :main         capitals-test.server
+             :aot          [capitals-test.server]
+             :uberjar-name "capitals-test.jar"
+             :prep-tasks   ["compile" ["cljsbuild" "once" "min"]]}
    }
 
   :cljsbuild

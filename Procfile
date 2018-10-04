@@ -1,0 +1,1 @@
+web: java $JVM_OPTS -cp target/capitals-test.jar clojure.main -m captials-test.server
