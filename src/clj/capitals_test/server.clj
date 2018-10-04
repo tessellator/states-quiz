@@ -1,5 +1,5 @@
 (ns capitals-test.server
-  (:require [states-quiz.handler :refer [handler]]
+  (:require [capitals-test.handler :refer [handler]]
             [config.core :refer [env]]
             [ring.adapter.jetty :refer [run-jetty]])
   (:gen-class))
