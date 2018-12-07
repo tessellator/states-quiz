@@ -24,9 +24,11 @@
    {:dependencies [[binaryage/devtools "0.9.10"]
                    [figwheel-sidecar "0.5.16"]
                    [cider/piggieback "0.3.5"]
-                   [day8.re-frame/re-frame-10x "0.3.5"]]
+                   [day8.re-frame/re-frame-10x "0.3.5"]
+                   [doo "0.1.10"]]
 
-    :plugins      [[lein-figwheel "0.5.16"]]}
+    :plugins      [[lein-figwheel "0.5.16"]
+                   [lein-doo "0.1.10"]]}
    :prod { }
    :uberjar {:source-paths ["env/prod/clj"]
              :omit-source  true
@@ -50,6 +52,12 @@
                     :preloads             [day8.re-frame-10x.preload devtools.preload]
                     :external-config      {:devtools/config {:features-to-install :all}}
                     }}
+    {:id "test"
+     :source-paths ["src/cljs" "test/cljs"]
+     :compiler {:main states-quiz.runner
+                :output-to "resources/public/js/compiled/test.js"
+                :output-dir "resources/public/js/compiled/test/out"
+                :optimizations :none}}
 
     {:id           "min"
      :source-paths ["src/cljs"]
