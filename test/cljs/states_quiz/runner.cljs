@@ -1,5 +1,6 @@
 (ns states-quiz.runner
   (:require [doo.runner :refer-macros [doo-all-tests]]
+            [states-quiz.events-test]
             [states-quiz.quiz-test]))
 
 (enable-console-print!)
