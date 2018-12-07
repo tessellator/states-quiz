@@ -1,7 +1,7 @@
 (ns states-quiz.subs
   (:require
    [re-frame.core :as rf]
-   [states-quiz.tests :as tests]))
+   [states-quiz.quiz :as tests]))
 
 (rf/reg-sub ::panel-name
   (fn [db]

@@ -1,7 +1,7 @@
 (ns states-quiz.events
   (:require
    [states-quiz.db :as db]
-   [states-quiz.tests :as tests]
+   [states-quiz.quiz :as tests]
    [re-frame.core :as rf]))
 
 (rf/reg-fx ::scroll-to-top
