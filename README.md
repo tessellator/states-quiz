@@ -1,6 +1,7 @@
-# capitals-test
+# States Quiz
 
-A [re-frame](https://github.com/Day8/re-frame) application designed to ... well, that part is up to you.
+The States Quiz is a simple re-frame application that demonstrates the basics building blocks provided by re-frame. Oh, and it helps you to learn your states and capitals to boot!
+
 
 ## Development Mode
 
