@@ -1,1 +1,0 @@
-(ns capitals-test.core)

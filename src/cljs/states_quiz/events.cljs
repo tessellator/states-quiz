@@ -1,7 +1,7 @@
-(ns capitals-test.events
+(ns states-quiz.events
   (:require
-   [capitals-test.db :as db]
-   [capitals-test.tests :as tests]
+   [states-quiz.db :as db]
+   [states-quiz.tests :as tests]
    [re-frame.core :as rf]))
 
 (rf/reg-fx ::scroll-to-top

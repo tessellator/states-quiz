@@ -1,4 +1,4 @@
-(ns capitals-test.handler
+(ns states-quiz.handler
   (:require [compojure.core :refer [GET defroutes]]
             [compojure.route :refer [resources]]
             [ring.util.response :refer [resource-response]]

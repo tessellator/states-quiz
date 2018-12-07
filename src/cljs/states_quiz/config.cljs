@@ -1,4 +1,4 @@
-(ns capitals-test.config)
+(ns states-quiz.config)
 
 (def debug?
   ^boolean goog.DEBUG)

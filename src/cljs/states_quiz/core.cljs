@@ -1,11 +1,10 @@
-(ns capitals-test.core
+(ns states-quiz.core
   (:require
    [reagent.core :as reagent]
    [re-frame.core :as re-frame]
-   [capitals-test.events :as events]
-   [capitals-test.views :as views]
-   [capitals-test.config :as config]
-   ))
+   [states-quiz.events :as events]
+   [states-quiz.views :as views]
+   [states-quiz.config :as config]))
 
 ;; -----------------------------------------------------------------------------
 ;; Bootstrap

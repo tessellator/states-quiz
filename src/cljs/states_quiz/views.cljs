@@ -1,8 +1,8 @@
-(ns capitals-test.views
+(ns states-quiz.views
   (:require
    [re-frame.core :as rf]
-   [capitals-test.events :as events]
-   [capitals-test.subs :as subs]))
+   [states-quiz.events :as events]
+   [states-quiz.subs :as subs]))
 
 ;; -----------------------------------------------------------------------------
 ;; Components

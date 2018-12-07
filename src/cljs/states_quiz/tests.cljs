@@ -1,4 +1,4 @@
-(ns capitals-test.tests)
+(ns states-quiz.tests)
 
 (def state-capitals
   {"Alabama" "Montgomery"

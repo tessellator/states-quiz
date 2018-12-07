@@ -1,4 +1,4 @@
-(ns capitals-test.db)
+(ns states-quiz.db)
 
 (def default-db
   {:panel-name :start-screen})

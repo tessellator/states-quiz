@@ -1,4 +1,4 @@
-(defproject capitals-test "0.1.0-SNAPSHOT"
+(defproject states-quiz "0.1.0-SNAPSHOT"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.10.238"]
                  [reagent "0.7.0"]
@@ -30,9 +30,9 @@
    :prod { }
    :uberjar {:source-paths ["env/prod/clj"]
              :omit-source  true
-             :main         capitals-test.server
-             :aot          [capitals-test.server]
-             :uberjar-name "capitals-test.jar"
+             :main         states-quiz.server
+             :aot          [states-quiz.server]
+             :uberjar-name "states-quiz.jar"
              :prep-tasks   ["compile" ["cljsbuild" "once" "min"]]}
    }
 
@@ -40,8 +40,8 @@
   {:builds
    [{:id           "dev"
      :source-paths ["src/cljs"]
-     :figwheel     {:on-jsload "capitals-test.core/mount-root"}
-     :compiler     {:main                 capitals-test.core
+     :figwheel     {:on-jsload "states-quiz.core/mount-root"}
+     :compiler     {:main                 states-quiz.core
                     :output-to            "resources/public/js/compiled/app.js"
                     :output-dir           "resources/public/js/compiled/out"
                     :asset-path           "js/compiled/out"
@@ -53,7 +53,7 @@
 
     {:id           "min"
      :source-paths ["src/cljs"]
-     :compiler     {:main            capitals-test.core
+     :compiler     {:main            states-quiz.core
                     :output-to       "resources/public/js/compiled/app.js"
                     :optimizations   :advanced
                     :closure-defines {goog.DEBUG false}
