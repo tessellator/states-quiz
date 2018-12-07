@@ -23,7 +23,8 @@
   {:dev
    {:dependencies [[binaryage/devtools "0.9.10"]
                    [figwheel-sidecar "0.5.16"]
-                   [cider/piggieback "0.3.5"]]
+                   [cider/piggieback "0.3.5"]
+                   [day8.re-frame/re-frame-10x "0.3.5"]]
 
     :plugins      [[lein-figwheel "0.5.16"]]}
    :prod { }
@@ -45,7 +46,8 @@
                     :output-dir           "resources/public/js/compiled/out"
                     :asset-path           "js/compiled/out"
                     :source-map-timestamp true
-                    :preloads             [devtools.preload]
+                    :closure-defines      {"re_frame.trace.trace_enabled_QMARK_" true}
+                    :preloads             [day8.re-frame-10x.preload devtools.preload]
                     :external-config      {:devtools/config {:features-to-install :all}}
                     }}
 
